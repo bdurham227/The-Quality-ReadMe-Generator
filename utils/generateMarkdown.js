@@ -19,10 +19,11 @@ function generateMarkdown(answers) {
   return `# ${answers.title}\n
 
   ###Table Of Contents\n
-  1. [Description](#desc)
-  2. [Navigation](#nav)
-  3. [Contributions](#contrib)
-
+  1. [Description](#description)
+  2. [Installation](#installation)
+  4. [Usage](#usage)
+  5. [Contributions](#contributions)
+  6. [Questions](#questions)
 
   ##Description \n
   ${answers.description}\n
