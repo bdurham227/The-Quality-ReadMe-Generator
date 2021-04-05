@@ -39,8 +39,11 @@
  
  ## License
 
- [![License MIT](https://img.shields.io/apm/l/pack)(https://spdx.org/licenses/MIT.html)]
+ 
+ [![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
 
+
+ 
  
  ## Contributing
 
@@ -55,6 +58,6 @@
  
  My github: undefined
 
- my Email: jd
+ my Email: dd
 
   
