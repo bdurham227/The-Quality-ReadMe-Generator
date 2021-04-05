@@ -1,4 +1,4 @@
-# ben
+# ddd
 
   [!Contributer Covenant]()
 
@@ -39,8 +39,9 @@
  
  ## License
 
- 
- [![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
+ [![License GNU GPLv3](https://img.shields.io/aur/license/pa)](https://spdx.org/licenses/GPL-3.0-or-later.html)
+
+ https://opensource.org/licenses/GPL-3.0
 
 
  
@@ -58,6 +59,6 @@
  
  My github: undefined
 
- my Email: dd
+ my Email: dddd
 
   

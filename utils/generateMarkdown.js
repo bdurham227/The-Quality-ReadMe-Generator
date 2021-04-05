@@ -29,11 +29,18 @@ function renderLicenseLink(license) {
 //    return " ";
 //  }
 
-
-
-
-
-
+if (license === "MIT"){
+  return license = `https://opensource.org/licenses/MIT`
+}
+else if (license === "Apache License 2.0") {
+  return license = `https://opensource.org/licenses/Apache-2.0`;
+}
+else if (license === "GNU GPLv3") {
+  return license = `https://opensource.org/licenses/GPL-3.0`
+}
+else {
+  return "";
+}
 
 }
 
@@ -76,7 +83,7 @@ function generateMarkdown(answers, license) {
  ![ScreenShot](${answers.screenshot} "ScreenShot")
  
  ## License\n
- ${renderLicenseBadge(answers.license)}
+ ${renderLicenseBadge(answers.license)}\n
  ${renderLicenseLink(answers.license)}\n
 
  
