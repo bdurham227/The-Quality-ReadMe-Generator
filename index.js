@@ -3,6 +3,7 @@ const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown") //the path require looks for defaults to a node_modules folder
 // TODO: Create an array of questions for user input
 const inquirer = require("inquirer");
+const getMitLicense = require('./utils/license');
 // const license = require('./utils/license');
 
     // const mit = 'Licensed under [MIT License](https://spdx.org/licenses/MIT.html)';

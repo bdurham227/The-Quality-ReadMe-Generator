@@ -1,5 +1,18 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// const getLicense = require('./license');
+// const generateLicense = getMitLicense();
+// const getApacheLicense = require('./license');
+// const getGnuLicense = require('./license');
+const mitLicense = require('./license');
+const apacheLicense = require('./license');
+const gnuLicense = require('./license');
+const { mit } = mitLicense;
+const { apache } = apacheLicense;
+const { gnu } = gnuLicense;
+// console.log({mit});
+
+
 function renderLicenseBadge(license) {
   
   if (license === "MIT") {
@@ -28,9 +41,12 @@ function renderLicenseLink(license) {
 //  } else {
 //    return " ";
 //  }
+//`https://opensource.org/licenses/MIT`
 
 if (license === "MIT"){
-  return license = `https://opensource.org/licenses/MIT`
+  
+  return license = `https://opensource.org/licenses/MIT`;
+  
 }
 else if (license === "Apache License 2.0") {
   return license = `https://opensource.org/licenses/Apache-2.0`;
@@ -48,6 +64,19 @@ else {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  
+  if (license === "MIT") {
+    return license = `${mit}`
+  } else if (license === "Apache License 2.0") {
+    return license = `${apache}`;
+  } else if (license === "GNU GPLv3") {
+    return license = `${gnu}`;
+  } else {
+    return "";
+  }
+  
+ 
+  
 
 }
 
@@ -85,6 +114,7 @@ function generateMarkdown(answers, license) {
  ## License\n
  ${renderLicenseBadge(answers.license)}\n
  ${renderLicenseLink(answers.license)}\n
+ ${renderLicenseSection(answers.license)};
 
  
  
