@@ -4,13 +4,19 @@
 // const generateLicense = getMitLicense();
 // const getApacheLicense = require('./license');
 // const getGnuLicense = require('./license');
-const mitLicense = require('./license');
-const apacheLicense = require('./license');
-const gnuLicense = require('./license');
-const { mit } = mitLicense;
-const { apache } = apacheLicense;
-const { gnu } = gnuLicense;
-// console.log({mit});
+// const mitLicense = require('./license');
+// const apacheLicense = require('./license');
+// // const gnuLicense = require('./license');
+// const { mit } = mitLicense;
+// const { apache } = apacheLicense;
+// // const { gnu } = mitLicense;
+// console.log({ mitLicense: apache });
+const license = require('./license');
+const { mitLicense } = license;
+const { apacheLicense } = license;
+const { gnuLicense } = license;
+// console.log({ mitLicense })
+// console.log({apacheLicense});
 
 
 function renderLicenseBadge(license) {
@@ -66,11 +72,11 @@ else {
 function renderLicenseSection(license) {
   
   if (license === "MIT") {
-    return license = `${mit}`
+    return license = `${ mitLicense }`;
   } else if (license === "Apache License 2.0") {
-    return license = `${apache}`;
+     return license = `${ apacheLicense }`;
   } else if (license === "GNU GPLv3") {
-    return license = `${gnu}`;
+    return license = `${ gnuLicense }`;
   } else {
     return "";
   }
