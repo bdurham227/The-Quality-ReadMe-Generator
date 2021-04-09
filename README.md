@@ -1,6 +1,7 @@
-# readme generator
+# The Quality ReadMe Generator Application
 
-[![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
+
+[![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
  ## Table of Contents
 1. [Description](#description)
 
@@ -8,20 +9,38 @@
 
 3. [Usage](#usage)
 
+4. [Tests](#tests)
+
+5. [Contributions](#contributions)
+
+6. [Questions](#questions)
+
 ## Description
- dd
+ This a command-line application that uses the inquirer npm to prompt the user with a series of questions and takes their input responses to generate a ReadMe markdown file. This application looks to save the user time by eliminating the need to create ReadMe.Md files for every project they create and post to Github. Creating this application helped me learn and practice using node, npm packages, and creating content dynamically with Javascript.
 
  ## Installation
-ddd
 
- [Github Live Site]dd
+   Getting Started:
+   * check node is installed
+   * make sure npm is installed
+   * get our npm initialized
+   * npm init
+   * get our package.json and check your dependencies
+  
+    node -v
+    npm install
+    npm init --yes
+    npm i inquirer
 
- [Github Repo Site]dd
+ [Github Live Site]github
+
+ [Github Repo Site]git hub repo
  ## Usage
- dd
+ usage
 
  ## License
- [![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
+ 
+[![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
 
    https://opensource.org/licenses/MIT
 
@@ -39,6 +58,6 @@ ddd
  ## Questions
  For additional questions about usage, installation or application improvement contact me through
 
-Github: dd
+Github: github
 
 Email: bdurham227@gmail.com

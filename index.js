@@ -134,7 +134,7 @@ function init() {
     inquirer.prompt(questions).then(function(answers){
 
     const newPageContent = generateMarkdown(answers);
-    writeToFile('readme.md', newPageContent);
+    writeToFile('./GeneratedFolder/readme.md', newPageContent);
 
     })
     
