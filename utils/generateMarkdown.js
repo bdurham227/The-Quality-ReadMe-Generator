@@ -5,16 +5,9 @@ const license = require('./license');
 const { mitLicense } = license;
 const { apacheLicense } = license;
 const { gnuLicense } = license;
+//set up Date object to get current year
 let year = new Date();
 
-// const Person = (`${answers.name}`) => {
-//   this.fullName = answers.name;
-// }
-// function Person (name) {
-//   this.name = name
-// }
-
-// const userName = new Person(`${answers.name}`);
 
 
 // Function that checks what the user response was and returns a license badge based on which license is passed in
@@ -55,7 +48,7 @@ else {
 // Function that that checks user input response and returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  
+  //set up conditionals to check users input to generate appropriate license
   if (license === "MIT") {
     return license = `${ mitLicense }`; 
   } else if (license === "Apache License 2.0") {
@@ -70,7 +63,7 @@ function renderLicenseSection(license) {
 
 // Function to generate markdown for README using user response data
 function generateMarkdown(answers) {
-//Generate table of contents if true
+//Generate table of contents if true dynamically
   let tableOfContents = ` ## Table of Contents`;
   if(answers.installation) {
     tableOfContents += `\n1. [Description](#description)\n`;
@@ -98,19 +91,19 @@ function generateMarkdown(answers) {
   
 
  tableOfContents += `\n## Description\n ${answers.description}\n`;
-
+//add Table of Contents to shell and build it up dynamically based off user inputs
  readMe += tableOfContents;
-
+//check if installations is not a string else add inputs
  if (answers.installation != "") {
    readMe += `\n ## Installation\n${answers.installation}\n`
    readMe += `\n [Github Live Site]${answers.githublive}\n`
    readMe += `\n [Github Repo Site]${answers.githubrepo}`
  }
-
+//check and add usage inputs
  if (answers.usage != "") {
    readMe += `\n ## Usage\n ${answers.usage}\n`;
  }
- 
+ //check and add installation inputs- run defined functions to generate license badge, link, agreement text and put current year and user's name into license
 if (answers.installation != "") {
   readMe += `\n ## License\n ${renderLicenseBadge(answers.license)}\n
    ${renderLicenseLink(answers.license)}\n
@@ -118,15 +111,15 @@ if (answers.installation != "") {
     Copyright \u00A9 [${year.getFullYear()}] [${answers.name}]
     ${renderLicenseSection(answers.license)}\n`;
 }
-
+//check and add input contributions
 if (answers.contributing != "") {
   readMe += `\n ## Contributing\n${answers.contributing}`;
 }
-
+//check and add test inputs
 if (answers.test === true) {
   readMe += `\n ## Tests \n ${answers.tests}`;
 }
-
+//create questions section and add github link and email to it
 readMe += `\n ## Questions\n For additional questions about usage, installation or application improvement contact me through\n
 Github: ${answers.github}\n
 Email: ${answers.email}`;
