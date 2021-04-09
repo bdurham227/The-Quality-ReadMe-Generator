@@ -15,28 +15,65 @@
 
 6. [Questions](#questions)
 
+-----
+
 ## Description
  This a command-line application that uses the inquirer npm to prompt the user with a series of questions and takes their input responses to generate a ReadMe markdown file. This application looks to save the user time by eliminating the need to create ReadMe.Md files for every project they create and post to Github. Creating this application helped me learn and practice using node, npm packages, and creating content dynamically with Javascript.
+
+ -----
 
  ## Installation
 
    Getting Started:
    * check node is installed
-   * make sure npm is installed
-   * get our npm initialized
+   * npm installed
+   * npm initialized
    * npm init
-   * get our package.json and check your dependencies
+   * package.json and dependencies
   
     node -v
     npm install
     npm init --yes
     npm i inquirer
 
- [Github Live Site]github
 
- [Github Repo Site]git hub repo
+
+  
+
+
+
  ## Usage
- usage
+
+ 
+
+ Run the Application:
+ --
+
+
+      node index.js
+   
+Watch Walkthrough video: 
+--
+[video] https://drive.google.com/file/d/1_Wcx5O6WhLq13bu2jyC0ehrvm0ivZQwX/preview 
+
+
+
+Screenshot of Generated Readme:
+--
+![Screenshot](images/readmegenscreenshot.png)
+
+
+
+Visit the Repo: 
+[Github]**<https://github.com/bdurham227/The-Quality-ReadMe-Generator>**
+
+   
+
+
+
+
+
+
 
  ## License
  
@@ -46,7 +83,7 @@
 
     Licensed under the MIT License
 
-    Copyright © [2021] [ben durham]
+    Copyright © [2021] [Benjamin Durham]
     
 
          Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -58,6 +95,6 @@
  ## Questions
  For additional questions about usage, installation or application improvement contact me through
 
-Github: github
+Github: https://github.com/bdurham227
 
 Email: bdurham227@gmail.com
