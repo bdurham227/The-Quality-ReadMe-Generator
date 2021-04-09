@@ -9,11 +9,9 @@
 
 3. [Usage](#usage)
 
-4. [Tests](#tests)
+4. [Contributions](#contributions)
 
-5. [Contributions](#contributions)
-
-6. [Questions](#questions)
+5. [Questions](#questions)
 
 -----
 
@@ -23,6 +21,7 @@
  -----
 
  ## Installation
+ 
 
    Getting Started:
    * check node is installed
@@ -44,10 +43,10 @@
 
  ## Usage
 
- 
+ ---
 
  Run the Application:
- --
+ 
 
 
       node index.js
@@ -92,7 +91,21 @@ Visit the Repo:
         
         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 
+## Contribution
+---
+
+Jason Barbanel 
+<br>
+https://github.com/Jbarbss
+<br>
+Takuya Matsomoto
+<br>
+https://github.com/TakuyaMats
+
+
+
  ## Questions
+ ---
  For additional questions about usage, installation or application improvement contact me through
 
 Github: https://github.com/bdurham227
