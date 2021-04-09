@@ -1,24 +1,24 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-// const getLicense = require('./license');
-// const generateLicense = getMitLicense();
-// const getApacheLicense = require('./license');
-// const getGnuLicense = require('./license');
-// const mitLicense = require('./license');
-// const apacheLicense = require('./license');
-// // const gnuLicense = require('./license');
-// const { mit } = mitLicense;
-// const { apache } = apacheLicense;
-// // const { gnu } = mitLicense;
-// console.log({ mitLicense: apache });
+//require license.js
 const license = require('./license');
+
+//Destructure license object, store in a variable to use
 const { mitLicense } = license;
 const { apacheLicense } = license;
 const { gnuLicense } = license;
-// console.log({ mitLicense })
-// console.log({apacheLicense});
+let year = new Date();
+
+// const Person = (`${answers.name}`) => {
+//   this.fullName = answers.name;
+// }
+// function Person (name) {
+//   this.name = name
+// }
+
+// const userName = new Person(`${answers.name}`);
 
 
+// Function that checks what the user response was and returns a license badge based on which license is passed in
+// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   
   if (license === "MIT") {
@@ -32,22 +32,9 @@ function renderLicenseBadge(license) {
    }
 }
 
-// TODO: Create a function that returns the license link
+// Function that checks user input response and returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  // const mit = 'Licensed under [MIT License](https://spdx.org/licenses/MIT.html)';
-  // const apache = 'Licensed under [Apache License](https://spdx.org/licenses/MIT.html)';
-  // const  gnu = 'Licensed under [GNU License](https://spdx.org/licenses/GPL-3.0-or-later.html)';
-//  if (license === "MIT") {
-//   return license = `\r[![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)`;
-//  } else if (license === "Apache License 2.0") {
-//   return license = `\r[![License Apache License 2.0](https://img.shields.io/aur/license/android-studio)](https://spdx.org/licenses/Apache-2.0.html)`;
-//  } else if (license === "GNU GPLv3") {
-//   return license = `\r[![License GNU GPLv3](https://img.shields.io/aur/license/pa)](https://spdx.org/licenses/GPL-3.0-or-later.html)`;
-//  } else {
-//    return " ";
-//  }
-//`https://opensource.org/licenses/MIT`
 
 if (license === "MIT"){
   
@@ -63,16 +50,14 @@ else if (license === "GNU GPLv3") {
 else {
   return "";
 }
-
 }
 
-
-// TODO: Create a function that returns the license section of README
+// Function that that checks user input response and returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   
   if (license === "MIT") {
-    return license = `${ mitLicense }`;
+    return license = `${ mitLicense }`; 
   } else if (license === "Apache License 2.0") {
      return license = `${ apacheLicense }`;
   } else if (license === "GNU GPLv3") {
@@ -80,14 +65,12 @@ function renderLicenseSection(license) {
   } else {
     return "";
   }
-  
- 
-  
 
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(answers, license) {
+// Function to generate markdown for README using user response data
+function generateMarkdown(answers) {
+  // const userName = new Person(`${answers.name}`);
   
   return `# ${answers.title}\n
   [!Contributer Covenant]()
@@ -120,12 +103,18 @@ function generateMarkdown(answers, license) {
  ## License\n
  ${renderLicenseBadge(answers.license)}\n
  ${renderLicenseLink(answers.license)}\n
+ Licensed under the ${answers.license} License\n
+ Copyright \u00A9 [${year.getFullYear()}] [${answers.name}]
  ${renderLicenseSection(answers.license)};
+ 
+ 
+ 
 
  
  
  ## Contributing\n
  ${answers.contributing}\n
+ 
  ## Tests\n
  ${answers.tests}\n
  ## Questions\n
@@ -135,5 +124,5 @@ function generateMarkdown(answers, license) {
 
   `;
 }
-
+//export generateMarkdown.js to use on index.js
 module.exports = generateMarkdown;
