@@ -1,84 +1,44 @@
-# ben
+# readme generator
 
-  [!Contributer Covenant]()
+[![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
+ ## Table of Contents
+1. [Description](#description)
 
+2. [Installation](#installation)
 
-  ### Table Of Contents
+3. [Usage](#usage)
 
-  1. [Description](#description)
-  2. [Installation](#installation)
-  4. [Usage](#usage)
-  5. [Contributions](#contributions)
-  6. [Questions](#questions)
+## Description
+ dd
 
-  ## Description 
-
-  ben
-
-  undefined
-
-  undefined
-
-  undefined
-
-  
-  
-
-  
  ## Installation
+ddd
 
- undefined
+ [Github Live Site]dd
 
- [Github Pages Live Site] undefined
-
- [Github Repo Site] undefined
+ [Github Repo Site]dd
  ## Usage
- undefined
+ dd
 
- ![ScreenShot](undefined "ScreenShot")
- 
  ## License
+ [![License MIT](https://img.shields.io/apm/l/pack)](https://spdx.org/licenses/MIT.html)
 
- [![License Apache License 2.0](https://img.shields.io/aur/license/android-studio)](https://spdx.org/licenses/Apache-2.0.html)
+   https://opensource.org/licenses/MIT
 
- https://opensource.org/licenses/Apache-2.0
+    Licensed under the MIT License
 
- Licensed under the Apache License 2.0 License
+    Copyright © [2021] [ben durham]
+    
 
- Copyright © [2021] [ben durham]
-   
-
-        Licensed under the Apache License, Version 2.0 (the "License");
-        you may not use this file except in compliance with the License.
-         You may obtain a copy of the License at
-     
-           http://www.apache.org/licenses/LICENSE-2.0
-     
-        Unless required by applicable law or agreed to in writing, software
-         distributed under the License is distributed on an "AS IS" BASIS,
-        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-        See the License for the specific language governing permissions and
-        limitations under the License.;
- 
- 
- 
-
- 
- 
- ## Contributing
-
- dd
-
- 
- ## Tests
-
- dd
+         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
 
  ## Questions
+ For additional questions about usage, installation or application improvement contact me through
 
- 
- My github: dd
+Github: dd
 
- my Email: dd
-
-  
+Email: bdurham227@gmail.com

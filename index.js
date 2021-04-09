@@ -27,35 +27,21 @@ const questions = [ {
 {
     type: "input",
     name:"description",
-    message: "Please describe your project?",
+    message: "Please describe your project?(i.e. motivations/problems aimed at solving/what did you learn,etc",
     validate: function (answer) {
         if (answer.length < 1) {
             return console.log("Please enter a description of your project.");
         }
         return true;
     }
-   
 },
 
-{
-    type:"input",
-    name:"motivation",
-    message:"What was your motivation for your project>",
-},
-{
-    type:"input",
-    name:"solve",
-    message:"What problem does your project aim to solve?",
-},
-{
-    type:"input",
-    name:"learn",
-    message:"What did you learn from working on this project?",
-},
+
 {
     type:'input',
     name:'installation',
     message:"What are the steps needed to install or view your application?",
+  
 },
 {
     type:"input",
@@ -70,7 +56,7 @@ const questions = [ {
 {
     type:"input",
     name:"usage",
-    message:"Please provide instructions or screenshots on how your application works or can be used",
+    message:"Please provide information on the usage of this application.",
 },
 
 {
@@ -83,14 +69,31 @@ const questions = [ {
 },
 
 {
-    type:"input",
+    type:"confirm",
     name:"contributing",
     message:"Are there any contributors you would like to mention?",
 },
 {
-    type:"input",
+    type: "input",
+    name: 'contributingInfo',
+    message: ' Please provide or list your contributions',
+    when: function (answers) {
+        return answers.contributing;
+    }
+
+},
+{
+    type:"confirm",
     name:'tests',
-    message: "Please provide any examples of or tests you have written out to test your applications functionality",
+    message: "Would you like to provide any test examples?",
+},
+{
+    type: 'input',
+    name: 'testInputs',
+    message: 'Please add your test examples or descriptions',
+    when: function (answers) {
+        return answers.tests;
+    }
 },
 
 {
@@ -101,7 +104,17 @@ const questions = [ {
 {
     type:"input",
     name:'email',
-    message: "Please provide your email"
+    message: "Please provide your email",
+    validate: function (email) {
+        validEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+        if (validEmail) {
+            console.log('valid email was entered');
+            return true;
+        } else {
+            console.log('Email entered is not valid');
+            return false;
+        }
+    }
 }
 ];
 
